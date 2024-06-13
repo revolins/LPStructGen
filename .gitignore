@@ -396,3 +396,44 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Relevant Project Files
+*.pyc
+*.swp
+backup/
+results/
+ogb_results/
+tuning/
+software/
+dataset/
+data/
+__pycache__/
+sbm_output/
+output/
+baselines/
+temp*
+tmp_vis.png
+*.pt
+*_output.txt
+GCN_FF_PA_5_10/
+*.sb
+*.SLURMout
+run_*
+old_*
+*_update.txt
+*_withx.txt
+*.out
+core.*
+*.png
+*.npy
+tune_ogb.sh
+cur_FF/
+*.tgz
+*__pycache__/
+.vscode/
+.DS_Store
+*.py[cod]
+*$py.class
+model/
+
+Edge-Proposal-Sets/logs/
