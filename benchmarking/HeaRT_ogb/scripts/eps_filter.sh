@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-# All available commands to Filter edges necessary for Edge Proposal Sets
+# All relevant commands to Filter edges necessary for Edge Proposal Sets
 # NOTE: These commands will need to be run in the benchmarking/HeaRT_ogb folder
 
 # BUDDY - Collab

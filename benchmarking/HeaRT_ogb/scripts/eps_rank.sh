@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-# All available commands to Rank edges necessary for Edge Proposal Sets
+# All relevant commands to Rank edges necessary for Edge Proposal Sets
 # NOTE: Edges for a given 'Filter' model must run before ranking
 # NOTE: These commands will need to be run in the benchmarking/HeaRT_ogb folder
 
