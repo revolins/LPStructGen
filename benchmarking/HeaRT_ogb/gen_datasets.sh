@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Available commands for generating the dataset splits tested in "Understanding the Generalizability of Link Predictors Under Distribution Shifts on Graphs" 
 # ogbl-collab
 
 ### ogbl-collab_CN_0_1_2

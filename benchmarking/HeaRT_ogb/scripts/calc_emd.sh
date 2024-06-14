@@ -1,5 +1,8 @@
 #!/bin/bash 
 
+#Necessary available commands for calculating Earth Mover's Distance on the dataset samples
+# NOTE: These commands will need to be run in the benchmarking/HeaRT_ogb folder
+
 python calc_emd.py --use_heuristic PA --dataset ogbl-ppa
 
 python calc_emd.py --use_heuristic SP --dataset ogbl-collab, ogbl-ppa

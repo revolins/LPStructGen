@@ -6,11 +6,7 @@ def main():
     parser.add_argument('--data', type=str, default="ogbl-collab")
     parser.add_argument('--device', type=str, default='0')
     args = parser.parse_args()
-
-    # collab --- 0.1,1e-2	0.3,1e-3 CN  3,5,0.1,0.001 -- SP 16,25,0.3,0.01 - 25,35,0.3,0.001
-    # PA  -- 21,25,0.3,0.01 - 21,33,0.3,0.01 - 25,34,0.3,0.01
-    # collab --- CN -- 2,1,0.1,0.001 - 4,2,0.1,0.001 - 5,3,0.1,0.001 -- SP - 25,17,0.1,0.01 - 36,25,0.1,0.001
-    
+   
     split_type = [["ogbl-ppa_CN_0_1_2", "0.1", "0.01"], ["ogbl-ppa_CN_0_2_4", "0.3", "0.001"],\
                  ["ogbl-ppa_CN_0_3_5", "0.3", "0.001"],["ogbl-ppa_CN_2_1_0", "0.1", "0.01"],\
                   ["ogbl-ppa_CN_4_2_0", "0.1", "0.01" ], ["ogbl-ppa_CN_5_3_0", "0.1", "0.01"],\
