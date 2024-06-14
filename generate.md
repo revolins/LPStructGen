@@ -13,11 +13,10 @@ A custom split on the OGBL dataset can be created by running the `benchmarking/H
 - `--inverse`, Specify in order to generate the inverse dataset splits, if the score would generate CN_0_1_2 then specifying inverse would generate CN_2_1_0
 - `--debug_heur`, Print statements for sanity checking size, number of samples, assertions
 
-Example script with ogbl-collab, using the CN heuristic, with the following thresholds, train=0, valid=1, test=2:
-```
-python gen_synth.py --data_name ogbl-collab --valid_rat 1 --test_rat 2 --split_type CN
-```
+# Dataset 
 
-# Datasets
-
-TODO
+### To generate all datasets
+```
+cd benchmarking/HeaRT_ogb
+bash gen_datasets.sh
+```

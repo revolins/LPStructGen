@@ -11,4 +11,4 @@ Please see the [generate.md](./generate.md) for how to generate custom dataset s
 
 ## Reproduce Results
 
-Please see the [run.md](./run.md) for how to reproduce the results in the paper. 
+Please see the [run.md](./run.md) for how to run experiments conducted in the paper. 
