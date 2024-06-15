@@ -43,13 +43,20 @@ def run_model(cmd_args):
 
     train_data(cmd_args, args, device, verbose = not cmd_args.non_verbose)
 
-
+def find_root(current_dir, marker=".git"):
+    current_dir = os.path.abspath(current_dir)
+    while not os.path.exists(os.path.join(current_dir, marker)):
+        parent_dir = os.path.dirname(current_dir)
+        if parent_dir == current_dir:
+            raise FileNotFoundError(f"Root at {marker} not found, file deleted or repository structure changed?")
+        current_dir = parent_dir
+    return current_dir
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_name', type=str, default='ogbl-collab')
-    parser.add_argument('--root-dir', type=str, default='~')
+    parser.add_argument('--root-dir', type=str, default=find_root())
     parser.add_argument('--runs', type=int, default=5)
     parser.add_argument("--mask-input", action='store_true', default=False)
     parser.add_argument("--non-verbose", action='store_true', default=False)
