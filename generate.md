@@ -20,3 +20,8 @@ A custom split on the OGBL dataset can be created by running the `benchmarking/H
 cd benchmarking/HeaRT_ogb
 bash gen_datasets.sh
 ```
+
+### Example - Generate the OGBL-collab CN 0,1,2 Dataset, within the benchmarking/HeaRT_ogb folder
+```
+python gen_synth.py --data_name ogbl-collab --valid_rat 1 --test_rat 2 --split_type cn
+```

@@ -16,9 +16,10 @@ cd TC-expr-collab
 bash tc_gcn.sh
 ```
 
-or any command can be extracted from the tc_gcn.sh to run a single test:
+Or any command can be extracted from the tc_gcn.sh to run a single test, within the 'TC-expr-collab' folder:
 
 ```
+cd TC-expr-collab
 python main.py --dataset ogbl-collab_CN_5_3_0 --encoder_lr 0.01 --predictor_lr 0.01 --en_dp 0.3 --n_layers 3 --n_hidden 128 --runs 5 --encoder GCN --predictor MLP --epochs 1000 --model GCN-aug --remove_rep --aug --gcn_denoise --train --device 0
 ```
 
